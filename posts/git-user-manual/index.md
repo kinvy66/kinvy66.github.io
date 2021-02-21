@@ -144,24 +144,26 @@ git push -u origin master
 
 #### 其他
 
-1. 使用 `git add` 后出现下面警告
+使用 `git add` 后出现下面警告
 
-   > > > > > > ```bash
-   > > > > > > warning: LF will be replaced by CRLF in text.txt.
-   > > > > > > The file will have its original line endings in your working directory
-   > > > > > > 警告：在xxx.xx文件中LF将被CRLF替换。
-   > > > > > > 在你的工作区（working directory）里，这个文件将会保持它原本的换行符。（line ending:行尾，换行）
-   > > > > > > 
-   > > > > > > ```
 
-   CR：Carriage Return 回车\r
-   LF：Line Feed  换行 \n
 
-   CRLF：Carriage Return Line Feed 回车换行\r\n
+> warning: LF will be replaced by CRLF in text.txt.
+ The file will have its original line endings in your working directory
+ 警告：在xxx.xx文件中LF将被CRLF替换。
+在你的工作区（working directory）里，这个文件将会保持它原本的换行符。（line ending:行尾，换行）
 
-   出现原因：
-   这是因为在Windows中的换行符为CRLF，而在Linux中的换行符为LF。在git创建的项目中换行符为LF，而gits是linux环境，Git自作聪明的“换行符自动转换”功能会自动进行转换，然后系统会提示LF将被转换为CRLF。
-   解决的办法很简单，禁止git的自动转换即可。
+
+
+
+CR：Carriage Return 回车\r
+LF：Line Feed  换行 \n
+
+CRLF：Carriage Return Line Feed 回车换行\r\n
+
+出现原因：
+这是因为在Windows中的换行符为CRLF，而在Linux中的换行符为LF。在git创建的项目中换行符为LF，而gits是linux环境，Git自作聪明的“换行符自动转换”功能会自动进行转换，然后系统会提示LF将被转换为CRLF。
+解决的办法很简单，禁止git的自动转换即可。
 
 
 
