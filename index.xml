@@ -3,24 +3,7 @@
         <title>Kinvy&#39;s 万事屋</title>
         <link>http://Kinvy66.github.io/</link>
         <description>A blog recording my life</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 16 Jan 2020 14:54:04 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
             <atom:link href="http://Kinvy66.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>用 Hugo 配合 Valine 实现评论后实时邮件通知</title>
-    <link>http://Kinvy66.github.io/posts/hugo-valine-email/</link>
-    <pubDate>Thu, 16 Jan 2020 14:54:04 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://Kinvy66.github.io/posts/hugo-valine-email/</guid>
-    <description><![CDATA[Valine 评论系统 邮件通知]]></description>
-</item><item>
-    <title>用 Hugo 配合 Valine 实现简洁的评论交互</title>
-    <link>http://Kinvy66.github.io/posts/hugo-valine/</link>
-    <pubDate>Fri, 10 Jan 2020 14:41:18 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://Kinvy66.github.io/posts/hugo-valine/</guid>
-    <description><![CDATA[<blockquote>
-<p><strong>本文同步更新至 <a href="https://youtu.be/U7fpUaGrt8o" target="_blank" rel="noopener noreffer">Youtube </a> 和 <a href="https://www.bilibili.com/video/av84392015/" target="_blank" rel="noopener noreffer">BiliBili </a></strong></p>
-<p>作者已经在最新的主题中加入了Algolia搜索，现在只要在配置文件中开启一下即可。</p>
-</blockquote>]]></description>
-</item></channel>
+        </channel>
 </rss>
