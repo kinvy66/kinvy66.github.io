@@ -34,7 +34,7 @@
                             "url": "http:\/\/Kinvy66.github.io\/images\/Apple-Devices-Preview.png",
                             "width":  3200 ,
                             "height":  2048 
-                        }],"genre": "posts","keywords": "Git","wordcount":  2 ,
+                        }],"genre": "posts","keywords": "Git","wordcount":  394 ,
         "url": "http:\/\/Kinvy66.github.io\/posts\/git-user-manual\/","datePublished": "2021-02-21T14:31:08+08:00","dateModified": "2021-02-21T14:31:08+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Kinvy","logo": {
@@ -116,8 +116,8 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Git 常用命令</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kinvy</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/git/"><i class="far fa-folder fa-fw"></i>Git</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-21">2021-02-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-21">2021-02-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 394 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -127,14 +127,308 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#标题">标题</a></li>
-        <li><a href="#标题2">标题2</a></li>
+        <li><a href="#git的基本使用">Git的基本使用</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#基本命令">基本命令</a></li>
+                <li><a href="#分支相关命令">分支相关命令</a></li>
+                <li><a href="#git远程操作">git远程操作</a></li>
+                <li><a href="#其他">其他</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="标题">标题</h2>
-<h2 id="标题2">标题2</h2></div><div class="post-footer" id="post-footer">
+            </div><div class="content" id="content"><h2 id="git的基本使用">Git的基本使用</h2>
+<h4 id="基本命令">基本命令</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git init  	<span class="c1">#初始化当前文件夹作为git库</span>
+git clone 	<span class="c1">#复制远程的库</span>
+<span class="c1">#版本管理</span>
+git add		<span class="c1">#将工作区的文件放入暂存区，后面加文件名或文件</span>
+git commit	<span class="c1">#将暂存区的文件提交到库中，会弹出编辑器提示输入提交信息，适用于提交信息比较多的情况</span>
+git commit -m <span class="s1">&#39;提交信息&#39;</span>  <span class="c1">#提交文件到库中，并注明提价信息，适用提交信息比较简短的情况</span>
+git rm		<span class="c1">#删除文件</span>
+git rm --cached &lt;file&gt;... <span class="c1">#从暂存区删除文件</span>
+<span class="c1">#查看信息</span>
+git <span class="nb">help</span>	<span class="c1">#帮助</span>
+git	log		<span class="c1">#查看日志</span>
+git log -n	<span class="c1">#查看最近n条的日志</span>
+git log --pretty<span class="o">=</span>oneline	<span class="c1">#一行简略的显示日志</span>
+git	diff	<span class="c1">#比较不同</span>
+git status	<span class="c1">#查看文件修改状态</span>
+git config --list	<span class="c1">#查看配置信息</span>
+<span class="c1">#远程协作</span>
+git pull
+git push
+<span class="c1">#git配置</span>
+git config --global		<span class="c1">#使用全局配置文件</span>
+git config --system		<span class="c1">#使用系统的配置文件</span>
+git config --local		<span class="c1">#使用当前仓库的配置文件</span>
+git config --global user.name <span class="s1">&#39;naem&#39;</span>  	<span class="c1">#配置全局用户名</span>
+git config --global user.email <span class="s1">&#39;email&#39;</span>  <span class="c1">#配置全局邮箱</span>
+
+
+<span class="c1">#删除文件</span>
+git rm filename		<span class="c1">#删除工作区的文件，</span>
+					<span class="c1">#完成了两件事，1.删除一个文件 2.将删除的文件纳入到暂存区</span>
+<span class="c1">#从已提交的文件中恢复删除的文件</span>
+git reset HEAD filename	 <span class="c1">#将待删除的文件从暂存区恢复到工作区</span>
+git checkout -- filename <span class="c1">#把之前的修改丢弃，用 rm 删除的文件只要这个命令就可以恢复</span>
+
+<span class="c1">#文件重命名</span>
+git mv oldname newname  <span class="c1">#执行这个命令后文件就会放入到暂存区，和mv的区别与 git rm和rm的区别一样</span>
+
+
+<span class="c1">#修改上次提交的消息</span>
+git commit --amend -m <span class="s1">&#39;修改的消息内容&#39;</span>
+
+
+
+
+<span class="c1">#.gitignore文件</span>
+<span class="c1">#在目录下添加一个.gitignore文件</span>
+<span class="c1">#文件内容就是需要忽略文件的文件名</span>
+<span class="c1">#git上传是就会忽略这些文件</span>
+<span class="c1">#文件支持通配符和正则表达式</span>
+
+
+
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="分支相关命令">分支相关命令</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git branch		<span class="c1">#查看当前所有的分支</span>
+git branch new_branch	<span class="c1">#创建新的分支（new_branch）</span>
+						<span class="c1">#创建时会把当前分支的文件复制到新分支</span>
+git checkout new_branch		<span class="c1">#切换到new_branc分支</span>
+git checkout -			<span class="c1">#切换到之前的分支</span>
+
+git branc -m old_branch new_branch  <span class="c1">#更改分支的名字</span>
+
+<span class="c1">#在新的分支上创建新文件，然后提交到git中</span>
+<span class="c1">#在切换到分支中是不会有刚刚创建的文件的</span>
+
+git branch -d new_branch	<span class="c1">#删除new_branch分支，没有合并分支无法删除</span>
+							<span class="c1">#使用下面的命令可以强制删除</span>
+git branch -D new_branch
+
+
+git checkout -b new_branch	<span class="c1">#创建new_branch分支，并切换到新分支</span>
+git merge new_branch  <span class="c1">#将new_branch分支的修改内容合并到当前所在的分支</span>
+
+git branch -v	<span class="c1">#查看当前分支最近一次提交的信息</span>
+
+
+
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="git远程操作">git远程操作</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">push 	推送
+pull	拉取，同时执行合并merge
+<span class="nv">pull</span> <span class="o">==</span> fetch + merge
+
+
+
+<span class="c1">#推送到GitHub</span>
+
+<span class="c1">#git remote 远程</span>
+<span class="c1">#origin,表示用origin代替后面的地址</span>
+git remote add origin https://github.com/Kinvy66/NanoClock.git
+
+git push -u origin master 	<span class="c1">#将本地的推送到远程，同时本地的master和远程的关联 </span>
+
+<span class="c1">#执行上述操作后，再次提交</span>
+git push
+
+git remote show	<span class="c1">#列出远程仓库的别名</span>
+git remote show	origin <span class="c1">#列出origin的详细信息</span>
+
+
+
+<span class="c1">#ssh</span>
+which ssh-keygen <span class="c1">#查看keygen的目录</span>
+ssh-keygen		<span class="c1">#生成keygen</span>
+
+
+<span class="c1">#执行步骤</span>
+git remote add origin ssh地址
+git push -u origin master
+ssh-keygen
+<span class="c1">#将公钥配置到GitHub上</span>
+git push -u origin master
+
+
+
+
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="其他">其他</h4>
+<ol>
+<li>
+<p>使用 <code>git add</code> 后出现下面警告</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">warning: LF will be replaced by CRLF in text.txt.
+The file will have its original line endings in your working directory
+警告：在xxx.xx文件中LF将被CRLF替换。
+在你的工作区（working directory）里，这个文件将会保持它原本的换行符。（line ending:行尾，换行）
+
+</code></pre></td></tr></table>
+</div>
+</div></blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>CR：Carriage Return 回车\r
+LF：Line Feed  换行 \n</p>
+<p>CRLF：Carriage Return Line Feed 回车换行\r\n</p>
+<p>出现原因：
+这是因为在Windows中的换行符为CRLF，而在Linux中的换行符为LF。在git创建的项目中换行符为LF，而gits是linux环境，Git自作聪明的“换行符自动转换”功能会自动进行转换，然后系统会提示LF将被转换为CRLF。
+解决的办法很简单，禁止git的自动转换即可。</p>
+</li>
+</ol></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
