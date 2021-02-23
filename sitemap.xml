@@ -2,13 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://Kinvy66.github.io/categories/</loc><lastmod>2021-02-21T14:31:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://Kinvy66.github.io/categories/</loc><lastmod>2021-02-23T16:08:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://Kinvy66.github.io/categories/git/</loc><lastmod>2021-02-23T16:08:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://Kinvy66.github.io/</loc><lastmod>2021-02-23T16:08:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://Kinvy66.github.io/tags/markdown/</loc><lastmod>2021-02-23T16:08:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://Kinvy66.github.io/tags/oss/</loc><lastmod>2021-02-23T16:08:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://Kinvy66.github.io/posts/</loc><lastmod>2021-02-23T16:08:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://Kinvy66.github.io/tags/</loc><lastmod>2021-02-23T16:08:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://Kinvy66.github.io/posts/typora&#43;picgo/</loc><lastmod>2021-02-23T16:08:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://Kinvy66.github.io/tags/git/</loc><lastmod>2021-02-21T14:31:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://Kinvy66.github.io/categories/git/</loc><lastmod>2021-02-21T14:31:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://Kinvy66.github.io/posts/git-user-manual/</loc><lastmod>2021-02-21T14:31:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://Kinvy66.github.io/</loc><lastmod>2021-02-21T14:31:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://Kinvy66.github.io/posts/</loc><lastmod>2021-02-21T14:31:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://Kinvy66.github.io/tags/</loc><lastmod>2021-02-21T14:31:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://Kinvy66.github.io/tags/content/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://Kinvy66.github.io/tags/installation/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://Kinvy66.github.io/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
