@@ -214,4 +214,136 @@ public class Demo02 {
 
 
 
+## Java方法
+
+
+
+### 1.方法是什么
+
+Java中的方法和C++中类的成员函数一致，用来完成特定功能的代码片段
+
+
+
+### 2.方法的定义
+
+```java
+/*
+修饰符 返回值类型  方法名（参数类型  参数名） {
+	方法体
+	return 返回值;
+	}
+*/
+
+//方法是定义在class中的
+
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println("Hello,World!");
+
+        int ret = add(10,20);	//方法调用
+        System.out.println(ret);
+    }
+    
+    //方法定义
+    public static int add(int num1,int num2) {
+        return num1+num2;
+    }
+}
+
+```
+
+
+
+### 3.方法的重载
+
+方法重载的规则：
+
+1. 方法名称必须相同
+2. 参数列表必须不同（个数不同，或类型不同、参数排列顺序不同等）
+3. 方法的返回类型可以相同也可以不同
+4. 返回值类型不同不能作为重载的条件
+
+
+
+```java
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println("Hello,World!");
+
+        int ret = add(10,20);	//方法调用
+        System.out.println(ret);
+        
+        float f = add(1.2f,1.4f);
+        System.out.println(f);
+    }
+    
+    //方法定义
+    public static int add(int num1,int num2) {
+        return num1+num2;
+    }
+    
+    //重载方法
+     public static float add(float num1,float num2) {
+        return num1+num2;
+    }
+}
+
+```
+
+
+
+
+
+### 4. 命令行传递参数
+
+
+
+示例：
+
+```java
+//该程序需要在命令行运行
+public class Demo01 {
+    public static void main(String[] args) {
+        for (int i = 0; i < args.length; i++) {
+            System.out.println("args["+i+"]:"+args[i]);
+
+        }
+    }
+}
+
+```
+
+
+
+### 5.可变参数
+
+JDK1.5开始，Java支持传递同类型的可变参数给一个方法
+
+在方法声明中，在指定参数类型后加一个省略号(...)
+
+一个方法中只能指定一个可变参数，它必须是方法的最后一个参数。任何普通的参数必须在它之前声明
+
+
+
+```java
+public class Demo02 {
+    public static void main(String[] args) {
+        Demo02 demo02 = new Demo02();
+        demo02.method(12,43,54,12,56,35);
+    }
+
+    public static void method(int... number) {
+        System.out.println(number);     //输出的是一个对象地址
+        for (int i = 0; i < number.length; i++) {
+            System.out.println(number[i]);
+        }
+    }
+}
+
+```
+
+
+
+
+
 
