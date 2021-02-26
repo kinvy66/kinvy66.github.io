@@ -1,28 +1,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>所有文章 - Kinvy&#39;s 万事屋</title>
-        <link>http://Kinvy66.github.io/posts/</link>
+        <link>http://www.kinvystudio.cn/posts/</link>
         <description>所有文章 | Kinvy&#39;s 万事屋</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 24 Feb 2021 20:54:35 &#43;0800</lastBuildDate><atom:link href="http://Kinvy66.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 24 Feb 2021 20:54:35 &#43;0800</lastBuildDate><atom:link href="http://www.kinvystudio.cn/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Java基础</title>
-    <link>http://Kinvy66.github.io/posts/javabase/</link>
+    <link>http://www.kinvystudio.cn/posts/javabase/</link>
     <pubDate>Wed, 24 Feb 2021 20:54:35 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://Kinvy66.github.io/posts/javabase/</guid>
+    <guid>http://www.kinvystudio.cn/posts/javabase/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Typora&#43;PicGo实现笔记图片上传到服务器遇到的问题</title>
-    <link>http://Kinvy66.github.io/posts/typora&#43;picgo/</link>
+    <link>http://www.kinvystudio.cn/posts/typora&#43;picgo/</link>
     <pubDate>Tue, 23 Feb 2021 16:08:11 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://Kinvy66.github.io/posts/typora&#43;picgo/</guid>
+    <guid>http://www.kinvystudio.cn/posts/typora&#43;picgo/</guid>
     <description><![CDATA[<p>Typora+PicGo实现笔记图片上传到服务器,上传失败</p>]]></description>
 </item><item>
     <title>Git 常用命令</title>
-    <link>http://Kinvy66.github.io/posts/git-user-manual/</link>
+    <link>http://www.kinvystudio.cn/posts/git-user-manual/</link>
     <pubDate>Sun, 21 Feb 2021 14:31:08 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://Kinvy66.github.io/posts/git-user-manual/</guid>
+    <guid>http://www.kinvystudio.cn/posts/git-user-manual/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
