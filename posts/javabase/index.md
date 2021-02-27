@@ -344,6 +344,348 @@ public class Demo02 {
 
 
 
+## Java OOP
+
+
+
+
+
+### 1. 初识面向对象
+
+ 以类的形式组织代码，以对象的组织（封装）数据。
+
+面向对象特征：封装，继承，多态
+
+
+
+
+
+### 2. 方法
+
+1. 定义一个 方法：
+
+   > 修饰符  返回值类型   方法名(...) {
+   > 
+   > ​		方法体
+   > 
+   >  ​		return 返回值；
+   > 
+   >  }
+   >
+   
+   示例：
+   
+   ```java
+   public class Demo01 {
+       public static void main(String[] args) {
+           //int max = max(129, 12);
+       }
+   
+       public static String sayHello() {
+           return "hello";
+       }
+   
+       public int  max(int a, int b) {
+           return a>b ? a : b;
+       }
+   }
+   ```
+
+2. 方法的调用
+
+   ```java
+   //Demo02.java
+   public class Demo02 {
+       public static void main(String[] args) {
+           //非静态方法实例化这个类
+           Student student = new Student();
+           student.speak();
+   
+           //静态方法  static
+           Student.say();
+       }
+   
+   }
+   
+   
+   //Student.java  
+   public class Student {
+       //非静态方法
+       public  void speak() {
+           System.out.println("speak");
+       }
+   
+       //静态方法
+       public static   void say() {
+           System.out.println("say");
+       }
+   }
+   
+   
+   ```
+
+   说明：java方法的参数传递是值传递，
+
+### 3. 对象的创建
+
+使用new创建对象，示例同上
+
+
+
+* 构造器
+
+  构造器和c++中的构造函数一致
+
+  无参构造，有参构造，定义了有参构造，无参构造必须显示定义
+
+  
+
+
+
+### 4. 面向对象三大特性
+
+* **封装：** 
+
+
+
+
+
+* **继承：**
+
+  Java只有单继承，没有多继承
+
+  在java中所有的类都默认直接或间接继承Object类
+
+  调用父类的同名属性和方法使用`super` 关键字
+
+  ```java
+  /************  Application.java  **************/
+  package com.kinvy.oop;
+  
+  import com.kinvy.oop.demo02.Student;
+  
+  public class Application {
+      public static void main(String[] args) {
+          Student student =  new Student();
+          student.test("App");
+      }
+  }
+  
+  
+  /*************   Person.java   父类   **************/
+  package com.kinvy.oop.demo02;
+  
+  //父类  Person
+  public class Person {
+      public Person() {
+          
+      }
+      
+      public String name = "Person";
+      
+  }
+  
+  /*********  Student.java   子类继承自Person  ***********/
+  package com.kinvy.oop.demo02;
+  
+  //子类  继承自Person
+  public class Student extends Person {  //继承自Person
+      public String name = "Student";
+  
+      public void test(String name) {
+          System.out.println(name);		//输出的是传进来的name值
+          System.out.println(this.name);	//输出当前类的name = Student
+          System.out.println(super.name);	//输出父类的name = Person
+      }
+  
+  }
+  
+  
+  ```
+
+  子类实例化时会自动调用父类的构造器，隐藏式的调用`super()`；
+
+* super()注意点：
+  1. super调用父类的构造方法，必须在构造方法的第一个
+  2. super必须只能出现在子类的方法或构造方法中
+  3. super和this不能同时调用构造方法
+
+* VS  `this`
+
+  代表的对象不同：
+
+  ​	this: 本身调用者这个对象
+
+  ​	super：代表父类对象的引用
+
+  前提：
+
+  ​	this： 没有继承也可以使用
+
+  ​	super： 只能在继承条件才可以使用
+
+  构造方法：
+
+  ​	this() ：本类的构造
+
+  ​	super()： 父类的构造
+
+* 方法的重写
+
+  ```java
+  /************  Application.java  **************/
+  package com.kinvy.oop;
+  
+  
+  import com.kinvy.oop.demo02.Son;
+  import com.kinvy.oop.demo02.Base;
+  
+  public class Application {
+      public static void main(String[] args) {
+  
+          Son son = new Son();
+          Base base = new Son();
+          //静态方法
+          son.test01();      //调用子类
+          base.test01();   //调用父类
+  
+          System.out.println("------------------");
+  
+          //非静态方法
+          son.test02();      //调用子类
+          base.test02();   //调用父类
+  
+      }
+  }
+  
+  
+  /*************   Base.java   父类   **************/
+  package com.kinvy.oop.demo02;
+  
+  public class Base {
+      public static void test01() {
+  
+          System.out.println("Base test01()");
+      }
+  
+      public  void test02() {
+  
+          System.out.println("Base test02()");
+      }
+  }
+  
+  
+  /*********  Son.java   子类继承自Person  ***********/
+  package com.kinvy.oop.demo02;
+  
+  public class Son extends Base{
+      public static void test01() {  //静态无法重写
+          System.out.println("Son test01()");
+      }
+  
+      @Override    //重写父类非静态方法
+      public void test02() {
+          System.out.println("Son test02()");
+      }
+  }
+  
+  
+  ```
+
+  重写：需要有继承关系，子类重写父类的方法
+
+  1. 方法名必须相同
+  2. 参数列表必须相同
+  3. 修饰符：权限范围可以扩大 但不能缩小 `publi->protected->private`
+  4. 抛出的异常：范围，可以被缩小，但不能扩大
+
+
+
+* **多态：**
+
+  ```java
+  /************Application.java ******************/
+  package com.kinvy.oop;
+  
+  
+  import com.kinvy.oop.demo03.Person;
+  import com.kinvy.oop.demo03.Student;
+  
+  public class Application {
+      public static void main(String[] args) {
+          //一个对象的实际类型是确定的
+          new Student();
+          new Person();
+  
+          //可以指向的引用类型就不确定了；父类的引用指向子类
+  
+          //Student 能调用的方法都是自己的或者继承父类的
+          Student s1 = new Student();
+          //Person 父类型， 可以指向子类，当时不能调用子类独有的方法
+          Person s2 = new Student();
+          Object s3 = new Student();
+  
+          s2.run();      //子类重写了父类的方法，执行子类的方法
+          s1.run();
+  
+          ((Student) s2).eat();  //强制装换
+      }
+  }
+  
+  
+  /************Person,java*************************/
+  package com.kinvy.oop.demo03;
+  
+  public class Person {
+      public void run() {
+          System.out.println("person run");
+      }
+  }
+  
+  
+  /************Student.java*********************/
+  package com.kinvy.oop.demo03;
+  
+  public class Student extends Person {
+      @Override
+      public void run() {
+          System.out.println("student run");
+      }
+  
+      public void eat() {
+          System.out.println("student eat");
+      }
+  }
+  
+  
+  ```
+
+  
+
+  多态注意事项：
+
+  1. 多态是方法的多态，属性没有多态
+
+  2. 父类和子类，有联系，类型转换异常 ！  ClassCast
+
+  3. 存在条件：继承关系，方法需要重写，父类引用指向子类对象！  father f1 = new son();
+
+     ​	不可以重写的方法：	`static方法` `final常量` `private方法`
+
+  
+
+  * `instanceof` 关键字
+
+  
+
+
+
+### 5. 抽象类和接口
+
+
+
+### 6.内部类及OOP实战
+
 
 
 
