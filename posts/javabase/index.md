@@ -682,9 +682,237 @@ public class Demo02 {
 
 ### 5. 抽象类和接口
 
+* **抽象类**
+
+Java的抽象类和C++的抽象类大致差不多 关键词 `abstact`修饰
+
+```java
+package com.kinvy.oop.demo04;
+
+public abstract class Action {    //抽象类
+    //约束~有人帮我们实现
+    //abstract  抽象方法，只有方法名字，没有方法的实现
+    //对应c++的纯虚函数
+
+    public abstract void doSomething();
+
+    //1.不能new这个抽象类，只能靠子类去实现它；
+    //2.抽象类中可以写普通方法
+    //3.抽象方法必须在抽象类中
+}
+
+```
+
+
+
+
+
+* **接口：**
+
+  接口声明关键词 `interface`
+
+  ```java
+  /************** UserService.java**********/
+  //接口
+  package com.kinvy.oop.demo05;
+  
+  //interface 定义的关键字，接口都学要有实现类
+  public interface UserService {
+  
+      //常量   public static final
+      int AGE = 10;
+  
+      //接口中的所有定义其实都是抽象的  public abstract
+      void  add(String name);
+      void delete(String name);
+      void update(String name);
+      void query(String name);
+  
+  }
+  
+  /************** TimeService.java**********/
+  //接口
+  package com.kinvy.oop.demo05;
+  
+  public interface TimeService {
+      void timer();
+  }
+  package com.kinvy.oop.demo05;
+  
+  public interface TimeService {
+      void timer();
+  }
+  package com.kinvy.oop.demo05;
+  
+  public interface TimeService {
+      void timer();
+  }
+  
+  
+  /************** UserSevviceImpl.java**********/
+  package com.kinvy.oop.demo05;
+  
+  //类  可以实现接口
+  //实现了接口中的
+  
+  //多继承~利用接口实现多继承
+  public class UserSevviceImpl implements UserService,TimeService {
+      @Override
+      public void add(String name) {
+  
+      }
+  
+      @Override
+      public void delete(String name) {
+  
+      }
+  
+      @Override
+      public void update(String name) {
+  
+      }
+  
+      @Override
+      public void query(String name) {
+  
+      }
+  
+      @Override
+      public void timer() {
+  
+      }
+  }
+  
+  
+  ```
+
+  接口作用：
+
+  1. 约束
+  2. 定义一些方法，让不同人实现
+  3. 接的方法是  `public abstract `   , 属性是  `public static final`
+  4. 接口不能被实例化，接口没有构造方法
+  5. `implents`可以实现多个接口
+  6. 必须要重写接口中的方法
+
 
 
 ### 6.内部类及OOP实战
+
+类中类
+
+
+
+```java
+/************** Application.java**********/
+package com.kinvy.oop;
+
+
+import com.kinvy.oop.demo06.Outer;
+
+public class Application {
+    public static void main(String[] args) {
+        Outer outer = new Outer();
+        //通过这个外部类来实例化内部类
+        Outer.Inner inner = outer.new Inner();
+
+        inner.getID();
+
+    }
+}
+
+/************** Outer.java**********/
+package com.kinvy.oop.demo06;
+
+public class Outer {
+    private int id = 10;
+    public void out() {
+        System.out.println("out");
+    }
+
+    public class Inner {
+        public void in() {
+            System.out.println("in");
+        }
+
+        //获得外部类的私有属性
+        public void getID() {
+            System.out.println(id);
+        }
+    }
+}
+
+
+```
+
+
+
+## Java 异常
+
+
+
+### 1.什么是异常
+
+程序运行出现不可预见的情况        Java把异常当作对象来处理
+
+
+
+### 2. Java异常处理机制
+
+* 抛出异常
+* 捕获异常
+
+* 异常处理关键字：  `try`   `catch` `finally`  `throw`  `throws`
+
+ 
+
+```java
+package com.kinvy.exception;
+
+public class Demo01 {
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 0;
+
+        //捕获多个异常，要从小到大
+
+        try {       //try  监控区域
+            System.out.println(a/b);
+        }catch (Error e) {   //catch（想要捕获的异常类型） 捕获异常
+            System.out.println("Error");
+        }catch (Exception e) {
+            System.out.println("Exception");
+        }catch (Throwable e){
+            System.out.println("Throwable");
+        }finally {     //finally  可选  处理后事
+            System.out.println("finally");
+        }
+
+        //方法抛出异常
+        try {
+            new Demo01().test(a,b);
+        } catch (ArithmeticException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //假设这个方法中，处理不了这个异常。方法抛出异常
+    public void test(int a, int b) throws  ArithmeticException{
+        if(b == 0) {
+            throw new ArithmeticException();      //主动抛出异常，一般在方法中使用
+        }
+    }
+
+}
+
+
+```
+
+捕获多个异常，要从小到大  ，IDEA快捷键  `Ctrl` + `Alt` + `T`
+
+
+
+
 
 
 
