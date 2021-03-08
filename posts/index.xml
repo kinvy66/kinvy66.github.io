@@ -3,7 +3,21 @@
         <title>所有文章 - Kinvy&#39;s 万事屋</title>
         <link>http://www.kinvystudio.cn/posts/</link>
         <description>所有文章 | Kinvy&#39;s 万事屋</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 24 Feb 2021 20:54:35 &#43;0800</lastBuildDate><atom:link href="http://www.kinvystudio.cn/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Mar 2021 14:13:40 &#43;0800</lastBuildDate><atom:link href="http://www.kinvystudio.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>C&#43;&#43; 基础</title>
+    <link>http://www.kinvystudio.cn/posts/cpp-base/</link>
+    <pubDate>Mon, 08 Mar 2021 14:13:40 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://www.kinvystudio.cn/posts/cpp-base/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Java GUI 编程</title>
+    <link>http://www.kinvystudio.cn/posts/javagui/</link>
+    <pubDate>Sun, 28 Feb 2021 16:07:34 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://www.kinvystudio.cn/posts/javagui/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Java基础</title>
     <link>http://www.kinvystudio.cn/posts/javabase/</link>
     <pubDate>Wed, 24 Feb 2021 20:54:35 &#43;0800</pubDate>

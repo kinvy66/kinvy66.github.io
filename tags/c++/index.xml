@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>C&#43;&#43; - 标签 - Kinvy&#39;s 万事屋</title>
+        <link>http://www.kinvystudio.cn/tags/c&#43;&#43;/</link>
+        <description>C&#43;&#43; - 标签 - Kinvy&#39;s 万事屋</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Mar 2021 14:13:40 &#43;0800</lastBuildDate><atom:link href="http://www.kinvystudio.cn/tags/c&#43;&#43;/" rel="self" type="application/rss+xml" /><item>
+    <title>C&#43;&#43; 基础</title>
+    <link>http://www.kinvystudio.cn/posts/cpp-base/</link>
+    <pubDate>Mon, 08 Mar 2021 14:13:40 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://www.kinvystudio.cn/posts/cpp-base/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
