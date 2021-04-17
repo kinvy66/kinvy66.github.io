@@ -60,7 +60,7 @@ go install --tags extended
 
    推荐主题[LoveIt](https://github.com/dillonzq/LoveIt)，将下载的主题放到  `Blog/themes` 文件夹下
 
-   ![image-20210417171115569](C:%5CUsers%5CKinvy%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210417171115569.png)
+   ![image-20210417171115569](https://kinvy-images.oss-cn-beijing.aliyuncs.com/Images/image-20210417171115569.png)
 
 
 
