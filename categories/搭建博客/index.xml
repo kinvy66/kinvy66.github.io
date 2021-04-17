@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Hugo - 标签 - Kinvy&#39;s 万事屋</title>
-        <link>http://www.kinvystudio.cn/tags/hugo/</link>
-        <description>Hugo - 标签 - Kinvy&#39;s 万事屋</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 17 Apr 2021 16:40:10 &#43;0800</lastBuildDate><atom:link href="http://www.kinvystudio.cn/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+        <title>搭建博客 - 分类 - Kinvy&#39;s 万事屋</title>
+        <link>http://www.kinvystudio.cn/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+        <description>搭建博客 - 分类 - Kinvy&#39;s 万事屋</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 17 Apr 2021 16:40:10 &#43;0800</lastBuildDate><atom:link href="http://www.kinvystudio.cn/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo搭建博客</title>
     <link>http://www.kinvystudio.cn/posts/hugo/</link>
     <pubDate>Sat, 17 Apr 2021 16:40:10 &#43;0800</pubDate>
