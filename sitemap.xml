@@ -2,14 +2,14 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://www.kinvystudio.cn/categories/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://www.kinvystudio.cn/tags/hugo/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://www.kinvystudio.cn/posts/hugo/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://www.kinvystudio.cn/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://www.kinvystudio.cn/posts/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://www.kinvystudio.cn/tags/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://www.kinvystudio.cn/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://www.kinvystudio.cn/posts/log/</loc><lastmod>2021-04-17T16:12:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://www.kinvystudio.cn/categories/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://www.kinvystudio.cn/tags/hugo/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://www.kinvystudio.cn/posts/hugo/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://www.kinvystudio.cn/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://www.kinvystudio.cn/posts/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://www.kinvystudio.cn/tags/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://www.kinvystudio.cn/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc><lastmod>2021-04-17T16:40:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://www.kinvystudio.cn/posts/log/</loc><lastmod>2021-04-17T16:12:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://www.kinvystudio.cn/tags/c&#43;&#43;/</loc><lastmod>2021-03-08T14:13:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://www.kinvystudio.cn/categories/c&#43;&#43;/</loc><lastmod>2021-03-08T14:13:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://www.kinvystudio.cn/posts/cpp-base/</loc><lastmod>2021-03-08T14:13:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
