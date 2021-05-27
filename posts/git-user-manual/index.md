@@ -140,44 +140,6 @@ git push -u origin master
 
 
 
-#### 版本回退
-
-**方法一：**
-
-1. 查看提交历史，确定回退版本
-
-   ```bash
-   git log
-   ```
-
-2. 回退到某个版本
-
-   ```bash
-   git reset --hard [版本号，只需前几个字符就可以]
-   ```
-
-3. 强制提交到远程
-
-   ```bash
-   git push -f -u origin master
-   ```
-
-注意：回退之后强制提交到远程，回退版本之后的提交历史会没有的。
-
-
-
-**方法二：git revert**
-
-```bash
-git revert HEAD    #撤销前一次commit
-git revert HEAD^   #撤销前前一次 commit
-git revert commit [commit id]  #撤销指定版本
-```
-
-`git revert` 是提交一个新的版本，这个新版本是将revert的版本内容反向修改，
-
-版本会递增，不会影响之前提交的内容
-
 
 
 #### 其他
